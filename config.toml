@@ -1,0 +1,19 @@
+# TOML config file
+
+field1 = "string 1"
+runtime = 10
+
+[hosts.host1]
+address = "10.1.1.1"
+actions = ["ping","http:8080"]
+step = 1
+
+[hosts.host2]
+address = "ippo.if.ua"
+actions = ["http", "http:8888", "https:443"]
+step = 3
+
+[hosts.host3]
+address = "mon.gov.ua"
+actions = ["https"]
+step = 2
